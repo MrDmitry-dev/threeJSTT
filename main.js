@@ -2,7 +2,7 @@ import './style.css'
 import * as THREE from 'three'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 
-const loader = new GLTFLoader()
+const loader = new GLTFLoader();
 
 let canvas, renderer;
 
@@ -48,7 +48,7 @@ function init() {
 
         camera.position.z = 10;
         scene.userData.camera = camera;
-        scene.rotation.x += Math.PI / 2
+        scene.rotation.x += Math.PI / 2;
 
         // const controls = new OrbitControls(scene.userData.camera, scene.userData.element);
         // controls.minDistance = 2;
