@@ -8,6 +8,8 @@ Run commands:
 
 `cd threeJSTT`
 
+`npm i`
+
 `npm run start` 
 
 Enter `http://localhost:3000/` in your browser.
