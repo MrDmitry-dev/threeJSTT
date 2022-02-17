@@ -3,50 +3,6 @@ import * as THREE from 'three'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 
 const loader = new GLTFLoader()
-    // const scene = new THREE.Scene()
-    // const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.7, 10000)
-    // const light = new THREE.AmbientLight(0xbcbcbc) // soft white light
-    // const renderer = new THREE.WebGLRenderer()
-
-// // './models/squareRoom.glb'
-
-// function animateAndRotateModels(pathOfmodel) {
-//     scene.background = new THREE.Color(0xF4F6F7);
-//     scene.add(light);
-
-//     renderer.setSize(window.innerWidth, window.innerHeight);
-//     document.body.appendChild(renderer.domElement);
-
-//     loader.load(pathOfmodel, function(gltf) {
-//         scene.rotation.x += Math.PI / 2
-//             // scene.rotation.y += 0.3
-//         scene.add(gltf.scene);
-//         gltf.scene.scale.set(20, 20, 20);
-//     }, undefined, function(error) {
-//         console.error(error);
-//     });
-
-//     camera.position.z = 8
-
-//     function animate() {
-//         requestAnimationFrame(animate)
-//             // scene.rotation.y += 0.01;
-//         renderer.render(scene, camera)
-//     }
-
-//     let btn = document.createElement("button")
-//     btn.innerHTML = "Rotate it"
-//     document.body.appendChild(btn)
-
-//     btn.addEventListener('click', () => scene.rotation.y += Math.PI / 2)
-
-//     animate()
-// }
-
-// animateAndRotateModels('./models/squareRoom.glb')
-// animateAndRotateModels('./models/lRoom.glb')
-
-// import { OrbitControls } from './OrbitControls.js';
 
 let canvas, renderer;
 
@@ -170,10 +126,6 @@ function render() {
     renderer.setScissorTest(true);
 
     scenes.forEach(function(scene) {
-
-        // so something moves
-        // MOVING IS HERE
-        // scene.children[0].rotation.y = Date.now() * 0.001;
 
         // get the element that is a place holder for where we want to
         // draw the scene
