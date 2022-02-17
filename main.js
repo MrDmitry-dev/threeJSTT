@@ -208,3 +208,9 @@ function render() {
 }
 
 let buttonToRotate = document.querySelector('button')
+
+buttonToRotate.addEventListener('click', () => {
+    console.log('it works');
+    scenes[0].rotation.y += Math.PI / 2
+    scenes[1].rotation.y += Math.PI / 2
+})
